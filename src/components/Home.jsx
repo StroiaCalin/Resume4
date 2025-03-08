@@ -22,7 +22,7 @@ function Home() {
             </div>
 
             <div className="home__img">
-                <img src="Calin.png" alt="Călin" style={{ maxWidth: '50%', height: '75%' }} />
+                <img src="./Calin.png" alt="Călin" style={{ maxWidth: '50%', height: '75%' }} />
             </div>
         </section>
     );
