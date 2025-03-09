@@ -459,7 +459,7 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 5; /* Eliminăm padding-ul din nav */
+    padding: 0; /* Nu adăugăm padding la nav */
   }
 
   .nav__list {
@@ -467,39 +467,35 @@ img {
     justify-content: center; /* Centrăm elementele */
     align-items: center;
     width: 100%;
-    margin: 0; /* Eliminăm orice margin implicit */
-    padding: 0; /* Eliminăm orice padding implicit */
+    margin: 0; /* Eliminăm marginile */
+    padding: 0; /* Eliminăm padding-ul pentru a menține un aspect compact */
   }
 
   .nav__item {
-    flex-grow: 1; /* Fiecare element crește pentru a umple spațiul disponibil */
-    margin: 0; /* Eliminăm marginile pentru a evita spațiul între elemente */
-    padding: 0; /* Eliminăm padding-ul pentru a maximiza spațiul disponibil */
+    flex-grow: 1; /* Fiecare element se extinde pentru a umple spațiul disponibil */
+    margin: 0 2px; /* Adăugăm un mic margin lateral între elemente pentru separare */
+    padding: 0; /* Eliminăm padding-ul intern */
   }
 
   .nav__link {
-    font-size: 0.6rem; /* Ajustăm dimensiunea fontului pentru a se potrivi */
+    font-size: 0.6rem; /* Mărimea fontului adaptată */
     display: block;
-    width: 100%; /* Asigurăm că link-ul ocupă întreaga lățime a elementului */
-    padding: 10px 0; /* Adăugăm padding vertical pentru a facilita interacțiunea */
+    width: 100%; /* Link-ul ocupă întreaga lățime a elementului */
+    padding: 10px 0; /* Padding vertical pentru ușurința interacțiunii */
   }
 
   .nav__toggle {
     font-size: 0.9rem;
     position: absolute;
-    right: 0; /* Plasăm toggle-ul exact în colțul din dreapta */
+    right: 0; /* Plasăm toggle-ul la marginea din dreapta */
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px 0; /* Minimal padding pentru ușurința utilizării */
-    margin: 0; /* Eliminăm marginile */
+    padding: 10px 0; /* Padding vertical minimal */
   }
 
-  
-  .home__title {
-    font-size: 1.5rem;
-    text-align: center;
+  .l-header {
+    height: 1.8rem; /* Menținem înălțimea redusă pentru header */
   }
-
   /* Ajustarea și centrarea imaginii */
   .home__img {
     height: 400px;
