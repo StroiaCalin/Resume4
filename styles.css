@@ -160,15 +160,12 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-@media (min-width: 1024px) {
-  .home__img {
+.home__img {
     position: absolute;
     right: 0;
-    bottom: 0;
-    width: 100px; 
+    width: 400px;
+    bottom: 10%;
   }
-}
-
 .home__img img {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   border-radius: 10px;
@@ -310,10 +307,7 @@ img {
   .home {
     padding: 8rem 0 2rem;
   }
-  .home__img {
-    width: 400px;
-    bottom: 10%;
-  }
+
   .about__container {
     padding-top: 2rem;
   }
@@ -335,9 +329,6 @@ img {
   }
   .home {
     padding: 10rem 0 2rem;
-  }
-  .home__img {
-    width: 450px;
   }
 
 /*Contact*/
@@ -466,16 +457,17 @@ img {
 
 
 
-@media (max-width: 428px) {
+@media (max-width: 393px) {
   .home__title {
     font-size: 1.5rem;
   }
 
   .home__img {
-    width: 100%; 
+    width: 500px;
     position: static;
+    margin-left: 200px;
   }
-
+  
   .nav, .nav__list {
     display: flex;
     align-items: center;
