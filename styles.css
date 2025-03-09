@@ -459,42 +459,61 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 0 2px; /* Minimal padding lateral */
-    display: flex; /* Utilizează flexbox */
-    justify-content: space-around; /* Distribuie spațiul uniform */
-    align-items: center; /* Centrează elementele vertical */
+    padding: 0 1px; /* Reducem la minimum padding-ul lateral pentru mai mult spațiu */
+    display: flex;
+    justify-content: center; /* Centrăm elementele pe orizontală */
+    align-items: center;
   }
 
   .nav__list {
-    width: 100%; /* Extinde lista pe întreaga lățime a nav-ului */
-    display: flex; /* Setează display la flex pentru a folosi proprietățile flexbox */
-    justify-content: space-around; /* Distribuie elementele uniform pe orizontală */
-    align-items: center; /* Asigură alinierea verticală a elementelor din listă */
-    padding: 0; /* Elimină padding-ul implicit */
+    display: flex;
+    justify-content: center; /* Asigură că elementele sunt centrate și distribuite corect */
+    align-items: center;
+    width: 100%;
+    padding: 0;
   }
 
   .nav__item {
-    flex-grow: 1; /* Permite fiecărui element să ocupe spațiu disponibil */
-    text-align: center; /* Centrează textul în fiecare element */
-    padding: 5px 0; /* Padding vertical pentru a mări zona de click */
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px 2px; /* Ajustăm padding-ul pentru a crește accesibilitatea */
   }
 
   .nav__link {
-    font-size: 0.6rem; /* Adjustează dimensiunea fontului */
-    color: inherit; /* Moștenește culoarea textului */
-    display: block; /* Face link-ul un bloc pentru a ocupa întregul spațiu al itemului */
-    width: 100%; /* Forțează link-ul să ocupe întreaga lățime a itemului */
+    font-size: 0.6rem; /* Ajustăm dimensiunea fontului */
+    padding: 5px 0; /* Adăugăm padding vertical pentru a facilita interacțiunea */
+    display: block;
+    width: 100%; /* Link-ul va ocupa întreaga lățime disponibilă a elementului */
+  }
+
+  .nav__link::after {
+    content: "";
+    display: block;
+    height: 2px; /* Reducem înălțimea barului indicator pentru selecție */
+    background-color: var(--first-color); /* Menținem culoarea pentru consistență */
+    width: 100%; /* Asigură că barul indicator va acoperi întreaga lățime a link-ului */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav__link:hover::after, .nav__link.active-link::after {
+    transform: scaleX(1);
   }
 
   .nav__toggle {
-    display: block; /* Asigură că butonul de meniu este vizibil */
-    font-size: 0.9rem; /* Ajustează dimensiunea butonului de toggle */
-    margin: 0 10px; /* Margini pentru poziționare */
-    cursor: pointer; /* Indicator de click */
+    font-size: 0.9rem;
+    padding: 0 5px; /* Ajustăm padding-ul pentru a nu ocupa prea mult spațiu */
+    position: absolute;
+    right: 5px; /* Asigurăm că toggle-ul este plasat corespunzător la marginea dreaptă */
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .l-header {
-    height: 1.8rem; /* Reducere înălțime header pentru a economisi spațiu */
+    height: 1.8rem; /* Continuăm să menținem header-ul compact */
   }
   
   .home__title {
