@@ -459,42 +459,42 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 0 2px; /* Reduce foarte mult padding-ul lateral */
+    padding: 0 2px; /* Minimal padding lateral */
+    display: flex; /* Utilizează flexbox */
+    justify-content: space-around; /* Distribuie spațiul uniform */
+    align-items: center; /* Centrează elementele vertical */
+  }
+
+  .nav__list {
+    width: 100%; /* Extinde lista pe întreaga lățime a nav-ului */
+    display: flex; /* Setează display la flex pentru a folosi proprietățile flexbox */
+    justify-content: space-around; /* Distribuie elementele uniform pe orizontală */
+    align-items: center; /* Asigură alinierea verticală a elementelor din listă */
+    padding: 0; /* Elimină padding-ul implicit */
   }
 
   .nav__item {
-    padding: 0 1px; /* Reduce drastic padding-ul pentru fiecare element */
+    flex-grow: 1; /* Permite fiecărui element să ocupe spațiu disponibil */
+    text-align: center; /* Centrează textul în fiecare element */
+    padding: 5px 0; /* Padding vertical pentru a mări zona de click */
   }
 
   .nav__link {
-    font-size: 0.6rem; /* Micșorează considerabil dimensiunea fontului pentru link-uri */
-    padding: 5px 0; /* Adaugă un pic de padding vertical pentru a facilita atingerea pe dispozitive tactile */
+    font-size: 0.6rem; /* Adjustează dimensiunea fontului */
+    color: inherit; /* Moștenește culoarea textului */
+    display: block; /* Face link-ul un bloc pentru a ocupa întregul spațiu al itemului */
+    width: 100%; /* Forțează link-ul să ocupe întreaga lățime a itemului */
   }
 
   .nav__toggle {
-    font-size: 0.9rem; /* Redimensionează butonul de toggle */
-    right: 2px; /* Reduce spațiul de la marginea dreaptă */
+    display: block; /* Asigură că butonul de meniu este vizibil */
+    font-size: 0.9rem; /* Ajustează dimensiunea butonului de toggle */
+    margin: 0 10px; /* Margini pentru poziționare */
+    cursor: pointer; /* Indicator de click */
   }
 
-  /* Reduce și mai mult înălțimea header-ului pentru a economisi spațiu vertical */
-  .l-header, .nav {
-    height: 1.8rem; /* Reduce înălțimea header-ului */
-  }
-
-  /* Asigură că elementele sunt centrate și distribuite uniform */
-  .nav, .nav__list {
-    align-items: center;
-    justify-content: space-around; /* Modifică pentru a distribui elementele uniform */
-  }
-
-  .nav__item {
-    flex-grow: 1; /* Permite fiecărui element să crească pentru a umple spațiul disponibil */
-    text-align: center; /* Centrează textul pentru coerență */
-  }
-
-  /* Ajustează butonul de meniu pentru a fi mai accesibil */
-  .nav__toggle {
-    padding: 5px; /* Adaugă padding pentru a facilita atingerea pe dispozitive tactile */
+  .l-header {
+    height: 1.8rem; /* Reducere înălțime header pentru a economisi spațiu */
   }
   
   .home__title {
