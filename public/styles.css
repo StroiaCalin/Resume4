@@ -459,7 +459,7 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 5px;
+    padding: 0; /* Elimină padding-ul pentru a economisi spațiu */
   }
 
   .nav__list {
@@ -467,106 +467,75 @@ img {
     justify-content: center; 
     align-items: center;
     width: 100%;
-    margin: 5px; 
-    padding: 5px; 
+    margin: 0; /* Elimină marginile */
+    padding: 0; /* Elimină padding-ul */
   }
 
   .nav__item {
-    flex-grow: 1; 
-    margin: 5px; 
-    padding: 5px; 
+    flex-grow: 1;
+    margin: 0; /* Elimină marginile */
+    padding: 0; /* Elimină padding-ul */
   }
 
   .nav__link {
-    font-size: 0.6rem; 
+    font-size: 0.6rem;
     display: block;
     width: 100%;
-    padding: 5px; 
+    padding: 5px; /* Adaugă padding doar pentru a îmbunătăți accesibilitatea */
   }
 
   .nav__toggle {
     font-size: 0.9rem;
     position: absolute;
-    right: 0; 
+    right: 5px; /* Poziționează butonul mai aproape de margine pentru a economisi spațiu */
     top: 50%;
     transform: translateY(-50%);
-    padding: 5px; 
+    padding: 5px;
+  }
+
+  .l-header {
+    height: auto; /* Ajustează înălțimea header-ului */
+    padding: 5px 0; /* Adaugă padding vertical pentru a menține elementele aliniate */
   }
 
   .home__img {
-    height: 400px;
-    width: 300px;
-    margin-left: 120px;
-    position: static;
+    height: auto; /* Asigură-te că imaginea este scalată corect */
+    width: 100%; /* Limitază lățimea la 100% */
+    position: static; /* Elimină poziționarea absolută dacă nu este necesară */
+    margin: 0 auto; /* Centrarea imaginii */
   }
 
-
-  .work__container {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  .skills__data {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .skills__icon {
-    margin-bottom: var(--mb-2);
-    display: block;
-    margin: 0 auto; 
-  }
-
-  .popup-inner {
-    width: 95%;
-    margin: 0 auto; 
-    padding: 15px;
-  }
-
-
-  .contact__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .footer {
-    text-align: center; 
-  }
-
-  .form, .ToDoButton, .form input, .form button {
-    width: 100%;
-    margin: 10px auto; 
-    text-align: center;
-  }
-
-  .ToDoButton {
-    display: block;
-    margin: 2rem auto; 
-  }
-
-  .home__title {
-    text-align: center; 
-    width: 100%; 
-    margin: 0 auto; 
-  }
   .home__social-icon {
-    display: flex; 
-    justify-content: center; 
-    width: 100%; 
-    margin-top: var(--mb-4); 
-    font-size: 1.5rem; 
-    margin: 0; 
-    padding: 3px; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: var(--mb-2);
+    font-size: 1.5rem; /* Reduc dimensiunea iconițelor */
+    margin: 0;
+    padding: 3px; /* Menține un padding mic pentru accesibilitate */
   }
 
   .home__social {
-    flex-direction: row; 
-    justify-content: center; 
-    padding: 0; 
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .work__container, .skills__data, .contact__container, .footer, .form, .ToDoButton {
+    width: 100%;
+    padding: 0 10px; /* Adaugă un padding mic pentru a preveni overflow-ul */
+    text-align: center; /* Centrează textul */
+  }
+
+  .form input, .form button, .ToDoButton {
+    width: 100%; /* Asigură-te că elementele de formular nu depășesc lățimea containerului */
+    margin: 5px auto; /* Centrează-le orizontal */
+    padding: 10px; /* Adaugă padding pentru ușurința utilizării */
+  }
+
+  .popup-inner {
+    width: 90%; /* Reduc lățimea la 90% pentru a preveni overflow-ul */
+    margin: 0 auto; /* Centrează fereastra popup */
+    padding: 15px; /* Adaugă padding pentru estetică */
   }
 }
-
