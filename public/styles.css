@@ -458,33 +458,33 @@ img {
 
 
 @media (max-width: 393px) {
-  /* Centrarea titlului și ajustarea dimensiunii fontului */
   .nav {
-    padding: 0 5px; /* Reduce și mai mult padding-ul lateral */
+    padding: 0 2px; /* Reduce foarte mult padding-ul lateral */
   }
 
   .nav__item {
-    padding: 0 3px; /* Reduce padding-ul pe fiecare element de navigație */
+    padding: 0 1px; /* Reduce drastic padding-ul pentru fiecare element */
   }
 
   .nav__link {
-    font-size: 0.2rem; /* Micsorează și mai mult dimensiunea fontului pentru link-uri */
+    font-size: 0.6rem; /* Micșorează considerabil dimensiunea fontului pentru link-uri */
+    padding: 5px 0; /* Adaugă un pic de padding vertical pentru a facilita atingerea pe dispozitive tactile */
   }
 
   .nav__toggle {
-    font-size: 1rem; /* Redimensionează butonul de toggle */
-    right: 5px; /* Poziționează mai aproape de marginea dreaptă */
+    font-size: 0.9rem; /* Redimensionează butonul de toggle */
+    right: 2px; /* Reduce spațiul de la marginea dreaptă */
   }
 
-  /* Reducerea înălțimii header-ului pentru a economisi spațiu vertical */
+  /* Reduce și mai mult înălțimea header-ului pentru a economisi spațiu vertical */
   .l-header, .nav {
-    height: 2rem; /* Reduc înălțimea header-ului */
+    height: 1.8rem; /* Reduce înălțimea header-ului */
   }
 
-  /* Centrarea și ajustarea spațiilor */
+  /* Asigură că elementele sunt centrate și distribuite uniform */
   .nav, .nav__list {
     align-items: center;
-    justify-content: space-between; /* Asigură o distribuție echitabilă a spațiului între elemente */
+    justify-content: space-around; /* Modifică pentru a distribui elementele uniform */
   }
 
   .nav__item {
@@ -492,9 +492,9 @@ img {
     text-align: center; /* Centrează textul pentru coerență */
   }
 
-  /* Ajustări suplimentare pentru a asigura vizibilitatea tuturor elementelor */
-  .nav__link, .nav__toggle {
-    padding: 0; /* Elimină orice padding pentru a maximiza spațiul disponibil */
+  /* Ajustează butonul de meniu pentru a fi mai accesibil */
+  .nav__toggle {
+    padding: 5px; /* Adaugă padding pentru a facilita atingerea pe dispozitive tactile */
   }
   
   .home__title {
