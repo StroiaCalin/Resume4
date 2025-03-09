@@ -459,61 +459,43 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 0 1px; /* Reducem la minimum padding-ul lateral pentru mai mult spațiu */
-    display: flex;
-    justify-content: center; /* Centrăm elementele pe orizontală */
-    align-items: center;
+    padding: 0; /* Eliminăm padding-ul din nav */
   }
 
   .nav__list {
     display: flex;
-    justify-content: center; /* Asigură că elementele sunt centrate și distribuite corect */
+    justify-content: center; /* Centrăm elementele */
     align-items: center;
     width: 100%;
-    padding: 0;
+    margin: 0; /* Eliminăm orice margin implicit */
+    padding: 0; /* Eliminăm orice padding implicit */
   }
 
   .nav__item {
-    flex-grow: 1;
-    text-align: center;
-    padding: 5px 2px; /* Ajustăm padding-ul pentru a crește accesibilitatea */
+    flex-grow: 1; /* Fiecare element crește pentru a umple spațiul disponibil */
+    margin: 0; /* Eliminăm marginile pentru a evita spațiul între elemente */
+    padding: 0; /* Eliminăm padding-ul pentru a maximiza spațiul disponibil */
   }
 
   .nav__link {
-    font-size: 0.6rem; /* Ajustăm dimensiunea fontului */
-    padding: 5px 0; /* Adăugăm padding vertical pentru a facilita interacțiunea */
+    font-size: 0.6rem; /* Ajustăm dimensiunea fontului pentru a se potrivi */
     display: block;
-    width: 100%; /* Link-ul va ocupa întreaga lățime disponibilă a elementului */
-  }
-
-  .nav__link::after {
-    content: "";
-    display: block;
-    height: 2px; /* Reducem înălțimea barului indicator pentru selecție */
-    background-color: var(--first-color); /* Menținem culoarea pentru consistență */
-    width: 100%; /* Asigură că barul indicator va acoperi întreaga lățime a link-ului */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav__link:hover::after, .nav__link.active-link::after {
-    transform: scaleX(1);
+    width: 100%; /* Asigurăm că link-ul ocupă întreaga lățime a elementului */
+    padding: 10px 0; /* Adăugăm padding vertical pentru a facilita interacțiunea */
   }
 
   .nav__toggle {
     font-size: 0.9rem;
-    padding: 0 0; /* Ajustăm padding-ul pentru as nu ocupa prea mult spațiu */
     position: absolute;
-    right: 20px; /* Asigurăm că toggle-ul este plasat corespunzător la marginea dreaptă */
+    right: 0; /* Plasăm toggle-ul exact în colțul din dreapta */
     top: 50%;
     transform: translateY(-50%);
+    padding: 10px 0; /* Minimal padding pentru ușurința utilizării */
+    margin: 0; /* Eliminăm marginile */
   }
 
   .l-header {
-    height: 2rem; /* Continuăm să menținem header-ul compact */
+    height: 1.8rem; /* Menținem înălțimea redusă a header-ului */
   }
   
   .home__title {
