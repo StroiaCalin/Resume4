@@ -513,7 +513,7 @@ img {
   }
 
   .l-header {
-    height: 1.8rem; /* Continuăm să menținem header-ul compact */
+    height: 0.5rem; /* Continuăm să menținem header-ul compact */
   }
   
   .home__title {
