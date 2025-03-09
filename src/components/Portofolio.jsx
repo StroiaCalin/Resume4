@@ -3,22 +3,19 @@ import ToDoItem from "./ToDoItem";
 import PortfolioItem from './PortofolioItem';
 
 function Portfolio() {
-    // State for managing popup visibility, image, and description
     const [popupVisible, setPopupVisible] = useState(false);
     const [todoPopupVisible, setTodoPopupVisible] = useState(false);
     const [popupImage, setPopupImage] = useState('');
     const [popupDescription, setPopupDescription] = useState('');
 
-    // Function to open the popup with image and description
     const openPopup = (image, description) => {
         setPopupImage(image);
         setPopupDescription(description);
-        setPopupVisible(true); // Show the popup
+        setPopupVisible(true); 
     };
 
-    // Function to close the popup
     const closePopup = () => {
-        setPopupVisible(false); // Hide the popup
+        setPopupVisible(false); 
     };
 
     const openTodoPopup = () => {

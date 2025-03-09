@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Componenta Skill pentru fiecare abilitate
 function SkillItem({ icon, name, percentage }) {
     const className = name.toLowerCase().replace(/[^a-z]/gi, '');
     const barStyle = {

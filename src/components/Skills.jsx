@@ -9,7 +9,6 @@ function Skills() {
         <div className="skills__container bd-grid">
                 <div>
                     <p className="skills__text">As a student at the Faculty of Automation and Computers, I have cultivated a strong foundation in the technologies and principles. My active participation in a frontend bootcamp hosted by Betfair has further deepened my knowledge of HTML, CSS, and JavaScript. This experience has equipped me with the necessary skills to build intuitive and responsive user interfaces.</p>
-                    {/* Folosirea componentei Skill pentru fiecare abilitate */}
                     <SkillItem icon="bxl-html5" name="HTML" percentage="95%" />
                     <SkillItem icon="bxl-css3" name="CSS" percentage="95%" />
                     <SkillItem icon="bxl-javascript" name="JAVASCRIPT" percentage="90%" />
