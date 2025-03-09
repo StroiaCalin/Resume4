@@ -160,13 +160,6 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-/* Stiluri implicite pentru .home__img */
-.home__img {
-  position: static;
-  width: 75%;
-  display: block;
-}
-
 @media (min-width: 1024px) {
   .home__img {
     position: absolute;
@@ -473,30 +466,30 @@ img {
 
 
 
-@media(max-width: 428px) {
+@media (max-width: 428px) {
   .home__title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .home__img {
     width: 100%; 
-    position: static; 
+    position: static;
   }
 
   .nav, .nav__list {
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .work__container {
-    grid-template-columns: 1fr; /* Acesta este rândul important */
-    padding: 0 20px; 
+    grid-template-columns: 1fr; 
+    padding: 0 20px;
   }
 
   .skills__data {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .skills__icon {
@@ -504,11 +497,12 @@ img {
   }
 
   .popup-inner {
-    width: 95%; 
-    padding: 15px; 
+    width: 95%; /* Ajustează lățimea ferestrei popup */
+    padding: 15px;
   }
 
   .contact__container {
-    flex-direction: column; 
+    flex-direction: column;
   }
 }
+
