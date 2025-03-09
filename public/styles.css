@@ -511,7 +511,6 @@ img {
     height: auto; /* Asigură-te că imaginea este scalată corect */
     width: 100%; /* Limitază lățimea la 100% */
     position: static; /* Elimină poziționarea absolută dacă nu este necesară */
-    margin-left: 150px; /* Centrarea imaginii */
   }
 
   .home__social-icon {
@@ -534,6 +533,9 @@ img {
     width: 100%;
     padding: 0 10px; /* Adaugă un padding mic pentru a preveni overflow-ul */
     text-align: center; /* Centrează textul */
+  }
+  .footer{
+    height: 70px;
   }
   .work__container {
     grid-template-columns: 1fr;
