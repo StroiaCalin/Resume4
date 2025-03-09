@@ -500,8 +500,7 @@ img {
   .home__img {
     height: 400px;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 110px;
     position: static;
   }
 
