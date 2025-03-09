@@ -505,7 +505,7 @@ img {
 
   .nav__toggle {
     font-size: 0.9rem;
-    padding: 0 0; /* Ajustăm padding-ul pentru a nu ocupa prea mult spațiu */
+    padding: 0 0; /* Ajustăm padding-ul pentru as nu ocupa prea mult spațiu */
     position: absolute;
     right: 20px; /* Asigurăm că toggle-ul este plasat corespunzător la marginea dreaptă */
     top: 50%;
