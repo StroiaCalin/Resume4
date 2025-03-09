@@ -459,7 +459,7 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 10px; /* Nu adăugăm padding la nav */
+    padding: 5px; /* Nu adăugăm padding la nav */
   }
 
   .nav__list {
@@ -467,21 +467,21 @@ img {
     justify-content: center; /* Centrăm elementele */
     align-items: center;
     width: 100%;
-    margin: 10px; /* Eliminăm marginile */
-    padding: 10px; /* Eliminăm padding-ul pentru a menține un aspect compact */
+    margin: 5px; /* Eliminăm marginile */
+    padding: 5px; /* Eliminăm padding-ul pentru a menține un aspect compact */
   }
 
   .nav__item {
     flex-grow: 1; /* Fiecare element se extinde pentru a umple spațiul disponibil */
-    margin: 10px; /* Adăugăm un mic margin lateral între elemente pentru separare */
-    padding: 10px; /* Eliminăm padding-ul intern */
+    margin: 5px; /* Adăugăm un mic margin lateral între elemente pentru separare */
+    padding: 5px; /* Eliminăm padding-ul intern */
   }
 
   .nav__link {
     font-size: 0.6rem; /* Mărimea fontului adaptată */
     display: block;
     width: 100%; /* Link-ul ocupă întreaga lățime a elementului */
-    padding: 10px 0; /* Padding vertical pentru ușurința interacțiunii */
+    padding: 5px; /* Padding vertical pentru ușurința interacțiunii */
   }
 
   .nav__toggle {
@@ -490,7 +490,7 @@ img {
     right: 0; /* Plasăm toggle-ul la marginea din dreapta */
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px 0; /* Padding vertical minimal */
+    padding: 5px; /* Padding vertical minimal */
   }
 
   .l-header {
