@@ -164,7 +164,7 @@ img {
 .home__img {
 
   position: static;
-  width: 50%;
+  width: 75%;
   display: block;
 }
 
@@ -474,8 +474,7 @@ img {
 
 
 
-/* Pentru telefoane mobile */
-@media (max-width: 480px) {
+@media only screen and (max-width: 428px) {
   .home__title {
     font-size: 1.5rem; 
   }
@@ -492,7 +491,7 @@ img {
   }
 
   .work__container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* Acesta este rândul important */
     padding: 0 20px; 
   }
 
