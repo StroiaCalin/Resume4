@@ -468,8 +468,8 @@ img {
   .home__img {
     height: 400px;
     width: 300px;
-    margin-left: 70px;
-    display: block; /* Asigură-te că folosești display block pentru centrarea cu margin auto */
+    margin-left: auto;
+    margin-right: auto;
     position: static;
   }
 
