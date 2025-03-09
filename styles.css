@@ -458,6 +458,40 @@ img {
 
 
 @media (max-width: 393px) {
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px; /* Adaugă padding pentru a nu atinge marginile ecranului */
+  }
+
+  .nav__list {
+    flex-direction: column; /* Schimbă direcția elementelor din listă pentru a fi verticale */
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav__item {
+    width: 100%; /* Asigură-te că fiecare item ocupă întreaga lățime */
+    text-align: center; /* Centrează textul pentru fiecare item */
+    padding: 10px 0; /* Adaugă padding pentru a mări zona de click */
+  }
+
+  .nav__link {
+    width: 100%; /* Extinde link-ul pe toată lățimea itemului pentru un acces mai ușor */
+  }
+
+  .l-header {
+    position: relative; /* Schimbă poziționarea dacă este necesar */
+  }
+
+  .nav__toggle {
+    display: block; /* Asigură-te că butonul de meniu mobil este vizibil */
+    position: absolute;
+    right: 20px; /* Poziționează butonul de toggle în partea dreaptă */
+    top: 50%;
+    transform: translateY(-50%); /* Centrează butonul vertical */
+  }
   /* Centrarea titlului și ajustarea dimensiunii fontului */
   .home__title {
     font-size: 1.5rem;
@@ -468,7 +502,8 @@ img {
   .home__img {
     height: 400px;
     width: 300px;
-    margin: 0 auto; /* Centrare orizontală */
+    margin-left: auto;
+    margin-right: auto; /* Centrare orizontală */
     display: block; /* Asigură-te că folosești display block pentru centrarea cu margin auto */
     position: static;
   }
