@@ -458,60 +458,82 @@ img {
 
 
 @media (max-width: 393px) {
+  /* Centrarea titlului și ajustarea dimensiunii fontului */
   .home__title {
     font-size: 1.5rem;
-    text-align: center; 
+    text-align: center;
   }
 
+  /* Ajustarea și centrarea imaginii */
   .home__img {
     height: 400px;
     width: 300px;
+    margin: 0 auto; /* Centrare orizontală */
+    display: block; /* Asigură-te că folosești display block pentru centrarea cu margin auto */
     position: static;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
   }
 
+  /* Centrarea elementelor de navigație */
   .nav, .nav__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%; 
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 
   .nav__item {
+    flex-grow: 1;
     text-align: center;
-    flex-grow: 1; 
   }
 
+  /* Ajustarea containerului de lucrări pentru a se afișa pe o singură coloană și centrarea conținutului */
   .work__container {
     grid-template-columns: 1fr;
     padding: 0 20px;
     text-align: center;
   }
 
+  /* Centrarea și ajustarea elementelor de competențe */
   .skills__data {
     flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
   }
 
   .skills__icon {
     margin-bottom: var(--mb-2);
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: 0 auto; /* Centrarea iconiței */
   }
 
+  /* Centrarea conținutului din fereastra popup */
   .popup-inner {
     width: 95%;
+    margin: 0 auto; /* Centrare orizontală și verticală */
     padding: 15px;
-    margin-left: auto;
-    margin-right: auto; 
   }
 
+  /* Centrarea containerelor de contact */
   .contact__container {
+    display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+  }
+
+  /* Ajustările pentru footer */
+  .footer {
+    text-align: center; /* Asigură că tot textul din footer este centrat */
+  }
+
+  /* Stiluri specifice pentru butoane și formular */
+  .form, .ToDoButton, .form input, .form button {
+    width: 100%;
+    margin: 10px auto; /* Centrare pe axa orizontală */
+    text-align: center;
+  }
+
+  .ToDoButton {
+    display: block;
+    margin: 2rem auto; /* Centrare și spațiere */
   }
 }
+
