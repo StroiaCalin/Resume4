@@ -511,6 +511,8 @@ img {
     height: auto; /* Asigură-te că imaginea este scalată corect */
     width: 100%; /* Limitază lățimea la 100% */
     position: static; /* Elimină poziționarea absolută dacă nu este necesară */
+    display: flex;
+    justify-content: center;
   }
 
   .home__social-icon {
