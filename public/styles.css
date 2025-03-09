@@ -459,7 +459,7 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 0; /* Nu adăugăm padding la nav */
+    padding: 10px; /* Nu adăugăm padding la nav */
   }
 
   .nav__list {
@@ -468,13 +468,13 @@ img {
     align-items: center;
     width: 100%;
     margin: 0; /* Eliminăm marginile */
-    padding: 0; /* Eliminăm padding-ul pentru a menține un aspect compact */
+    padding: 10px; /* Eliminăm padding-ul pentru a menține un aspect compact */
   }
 
   .nav__item {
     flex-grow: 1; /* Fiecare element se extinde pentru a umple spațiul disponibil */
     margin: 0 2px; /* Adăugăm un mic margin lateral între elemente pentru separare */
-    padding: 0; /* Eliminăm padding-ul intern */
+    padding: 10px; /* Eliminăm padding-ul intern */
   }
 
   .nav__link {
@@ -494,7 +494,7 @@ img {
   }
 
   .l-header {
-    height: 1.8rem; /* Menținem înălțimea redusă pentru header */
+    height: 1.5rem; /* Menținem înălțimea redusă pentru header */
   }
   /* Ajustarea și centrarea imaginii */
   .home__img {
