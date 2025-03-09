@@ -4,23 +4,18 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /*Colors*/
-
   --hue-color: 26;
   --first-color: hsl(var(--hue-color), 100%, 50%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*Fuente y tipografia*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 3rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /*Margenes*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  /*z index*/
   --z-back: -10;
   --z-fixed: 100;
 }
@@ -165,21 +160,20 @@ img {
 .home__social-icon:hover {
   color: var(--first-color);
 }
-/* Stiluri implicite pentru .home__img, care vor fi folosite pe ecrane mai mici */
+/* Stiluri implicite pentru .home__img */
 .home__img {
-  /* Proprietăți implicite sau stiluri pentru ecrane mici */
+
   position: static;
-  width: 50%; /* sau orice altă dimensiune dorită pentru dispozitive mobile */
+  width: 50%;
   display: block;
 }
 
-/* Stiluri pentru ecrane mai mari de 1024px */
 @media (min-width: 1024px) {
   .home__img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100px; /* Dimensiunea specifică pentru ecrane mari */
+    width: 100px; 
   }
 }
 
@@ -400,8 +394,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2000; /* Asigură-te că este suficient de mare pentru a suprapune toate celelalte elemente */
-  overflow-y: auto; /* Permite scroll în interiorul popup-ului dacă este necesar */
+  z-index: 2000; 
+  overflow-y: auto; 
 }
 
 .popup-inner {
@@ -413,8 +407,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; /* Poziționează relativ pentru a controla z-index-ul copiilor săi, dacă este necesar */
-  text-align: center;  /* Centrarea textului pentru tot conținutul din popup-inner */
+  position: relative; 
+  text-align: center;  
 }
 .popup-img {
   width: 100%;
@@ -435,7 +429,7 @@ img {
   margin-top: 10px;
   margin-left: 820px;
   cursor: pointer;
-  z-index: 1050; /* Asigură-te că este peste alte elemente */
+  z-index: 1050; 
 }
 
 /* Todo */
@@ -461,8 +455,8 @@ img {
 
 /* Stiluri pentru titlu */
 .heading-todo h1 {
-  text-align: center; /* Centrează textul titlului */
-  color: #333; /* Culoare pentru titlu */
+  text-align: center; 
+  color: #333; 
 }
 
 /* Stiluri pentru formă și butoane */
@@ -473,9 +467,9 @@ img {
   align-items: center;
 }
 .form input, .form button {
-  width: 100%; /* Lățimea completă pentru input și buton */
+  width: 100%; 
   padding: 10px;
-  margin-top: 10px; /* Spațiu între elemente */
+  margin-top: 10px; 
 }
 
 
@@ -483,40 +477,40 @@ img {
 /* Pentru telefoane mobile */
 @media (max-width: 480px) {
   .home__title {
-    font-size: 1.5rem; /* Mărimea fontului adaptată pentru ecrane mici */
+    font-size: 1.5rem; 
   }
 
   .home__img {
-    width: 100%; /* Imaginea acoperă întreaga lățime */
-    position: static; /* Anulează orice poziționare absolută */
+    width: 100%; 
+    position: static; 
   }
 
   .nav, .nav__list {
-    display: flex; /* Menținem layout-ul pe orizontală pentru navigație */
+    display: flex; 
     align-items: center;
-    justify-content: space-between; /* Distribuie elementele uniform */
+    justify-content: space-between; 
   }
 
   .work__container {
-    grid-template-columns: 1fr; /* Elementele din portofoliu sunt afișate pe o singură coloană */
-    padding: 0 20px; /* Adaugă un padding pentru a nu atinge marginile ecranului */
+    grid-template-columns: 1fr; 
+    padding: 0 20px; 
   }
 
   .skills__data {
-    flex-direction: column; /* Elementele din competențe sunt așezate vertical */
-    align-items: center; /* Centrarea elementelor pe verticală */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .skills__icon {
-    margin-bottom: var(--mb-2); /* Spațiu între icon și textul competenței */
+    margin-bottom: var(--mb-2);
   }
 
   .popup-inner {
-    width: 95%; /* Lățimea popup-ului acoperă majoritatea ecranului */
-    padding: 15px; /* Padding interior pentru a nu atinge marginile ecranului */
+    width: 95%; 
+    padding: 15px; 
   }
 
   .contact__container {
-    flex-direction: column; /* Elementele de contact sunt așezate pe verticală */
+    flex-direction: column; 
   }
 }
