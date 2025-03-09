@@ -459,7 +459,7 @@ img {
 
 @media (max-width: 393px) {
   .nav {
-    padding: 0; /* Eliminăm padding-ul din nav */
+    padding: 5; /* Eliminăm padding-ul din nav */
   }
 
   .nav__list {
