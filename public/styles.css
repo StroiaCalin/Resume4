@@ -460,19 +460,17 @@ img {
 @media (max-width: 393px) {
   .nav {
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: center;
     padding: 0 20px; /* Adaugă padding pentru a nu atinge marginile ecranului */
   }
 
   .nav__list {
-    flex-direction: column; /* Schimbă direcția elementelor din listă pentru a fi verticale */
-    width: 100%;
-    align-items: center;
+    width: 50%;
   }
 
   .nav__item {
-    width: 100%; /* Asigură-te că fiecare item ocupă întreaga lățime */
+    width: 50%; /* Asigură-te că fiecare item ocupă întreaga lățime */
     text-align: center; /* Centrează textul pentru fiecare item */
     padding: 10px 0; /* Adaugă padding pentru a mări zona de click */
   }
@@ -502,8 +500,7 @@ img {
   .home__img {
     height: 400px;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto; /* Centrare orizontală */
+    margin-left: 200px;
     display: block; /* Asigură-te că folosești display block pentru centrarea cu margin auto */
     position: static;
   }
