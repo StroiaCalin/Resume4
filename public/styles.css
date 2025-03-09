@@ -467,13 +467,13 @@ img {
     justify-content: center; /* Centrăm elementele */
     align-items: center;
     width: 100%;
-    margin: 0; /* Eliminăm marginile */
+    margin: 10px; /* Eliminăm marginile */
     padding: 10px; /* Eliminăm padding-ul pentru a menține un aspect compact */
   }
 
   .nav__item {
     flex-grow: 1; /* Fiecare element se extinde pentru a umple spațiul disponibil */
-    margin: 0 2px; /* Adăugăm un mic margin lateral între elemente pentru separare */
+    margin: 10px; /* Adăugăm un mic margin lateral între elemente pentru separare */
     padding: 10px; /* Eliminăm padding-ul intern */
   }
 
