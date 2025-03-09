@@ -463,9 +463,10 @@ img {
   }
 
   .home__img {
-    width: 500px;
+    width: 300px;
     position: static;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right:auto;
   }
   
   .nav, .nav__list {
