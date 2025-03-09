@@ -460,42 +460,58 @@ img {
 @media (max-width: 393px) {
   .home__title {
     font-size: 1.5rem;
+    text-align: center; 
   }
 
   .home__img {
+    height: 400px;
     width: 300px;
     position: static;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
+    display: block;
   }
-  
+
   .nav, .nav__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%; 
+  }
+
+  .nav__item {
+    text-align: center;
+    flex-grow: 1; 
   }
 
   .work__container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     padding: 0 20px;
+    text-align: center;
   }
 
   .skills__data {
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    text-align: center; 
   }
 
   .skills__icon {
     margin-bottom: var(--mb-2);
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .popup-inner {
-    width: 95%; /* Ajustează lățimea ferestrei popup */
+    width: 95%;
     padding: 15px;
+    margin-left: auto;
+    margin-right: auto; 
   }
 
   .contact__container {
     flex-direction: column;
+    align-items: center; 
   }
 }
-
