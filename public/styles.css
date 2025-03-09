@@ -458,6 +458,15 @@ img {
 
 
 @media (max-width: 393px) {
+  .home__title, .home__data {
+    text-align: center; /* Centrarea titlului și a datelor din Home */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .skills__container, .skills__text {
+    text-align: center; /* Centrarea textului din secțiunea Skills */
+  }
   .nav {
     padding: 0; /* Elimină padding-ul pentru a economisi spațiu */
   }
@@ -502,7 +511,7 @@ img {
     height: auto; /* Asigură-te că imaginea este scalată corect */
     width: 100%; /* Limitază lățimea la 100% */
     position: static; /* Elimină poziționarea absolută dacă nu este necesară */
-    margin: 0 auto; /* Centrarea imaginii */
+    margin-left: 150px; /* Centrarea imaginii */
   }
 
   .home__social-icon {
@@ -526,7 +535,9 @@ img {
     padding: 0 10px; /* Adaugă un padding mic pentru a preveni overflow-ul */
     text-align: center; /* Centrează textul */
   }
-
+  .work__container {
+    grid-template-columns: 1fr;
+  }
   .form input, .form button, .ToDoButton {
     width: 100%; /* Asigură-te că elementele de formular nu depășesc lățimea containerului */
     margin: 5px auto; /* Centrează-le orizontal */
