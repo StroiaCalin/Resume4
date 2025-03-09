@@ -162,7 +162,6 @@ img {
 }
 /* Stiluri implicite pentru .home__img */
 .home__img {
-
   position: static;
   width: 75%;
   display: block;
@@ -474,7 +473,7 @@ img {
 
 
 
-@media only screen and (max-width: 428px) {
+@media(max-width: 428px) {
   .home__title {
     font-size: 1.5rem; 
   }
